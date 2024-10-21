@@ -36,11 +36,23 @@ public class InMemoryUserDataAccessObject implements SignupUserDataAccessInterfa
     }
 
     /**
+     * This method sets the current user.
      * @param name
+     *      Takes the user's name as string parameter
      */
     @Override
     public void setCurrentUser(String name) {
         this.currentUser = name;
+    }
+
+    /**
+     * Outputs the current user.
+     * @return
+     *      returns the current username
+     */
+    @Override
+    public String getCurrentUser() {
+        return currentUser;
     }
 
     @Override
